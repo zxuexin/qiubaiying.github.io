@@ -10,7 +10,7 @@
     the wrong,it's grace and thankful!
 
 ## file input/output ##
-    keyword:write(),read(),readline(), with,seek()
+keyword:write(),read(),readline(), with,seek()
     
 such as:
 
@@ -18,6 +18,7 @@ such as:
 >>> bdata = bytes(range(0,256))
 >>> len(bdata)
 256
+
 >>> fout = open('bfile','wb')
 >>> size = len(bdata)
 >>> offset = 0
@@ -27,12 +28,12 @@ such as:
      break
    fout.write(bdata[offset:offset+chunk])
    offset += chunk
-
-	
 100
 100
 56
 >>> fout.close()`
+
+
 ## Sturctured text files and binary files ##
 ### text file ###
 ### binary file ###
