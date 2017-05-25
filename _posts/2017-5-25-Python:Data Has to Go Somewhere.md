@@ -13,6 +13,7 @@
     keyword:write(),read(),readline(), with,seek()
     
 such as:
+
 `fout = open('bfile','wb')
 >>> bdata = bytes(range(0,256))
 >>> len(bdata)
