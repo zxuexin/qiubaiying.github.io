@@ -15,15 +15,14 @@ keyword:write(),read(),readline(), with,seek()
 such as:
 
 `fout = open('bfile','wb')
->>> bdata = bytes(range(0,256))
->>> len(bdata)
+ >>> bdata = bytes(range(0,256))
+ >>> len(bdata)
 256
-
->>> fout = open('bfile','wb')
->>> size = len(bdata)
->>> offset = 0
->>> chunk = 100
->>> while True:
+ >>> fout = open('bfile','wb')
+ >>> size = len(bdata)
+ >>> offset = 0
+ >>> chunk = 100
+ >>> while True:
    if offset >size:
      break
    fout.write(bdata[offset:offset+chunk])
