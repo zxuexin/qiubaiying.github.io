@@ -10,12 +10,32 @@
     the wrong,it's grace and thankful!
 
 ## file input/output ##
-    dominate
-## 结构化的文本文件和二进制文件 ##
-### 文本文件 ###
-### 二进制文件 ###
+    keyword:write(),read(),readline(), with,seek()
+    such as:
+`fout = open('bfile','wb')
+>>> bdata = bytes(range(0,256))
+>>> len(bdata)
+256
+>>> fout = open('bfile','wb')
+>>> size = len(bdata)
+>>> offset = 0
+>>> chunk = 100
+>>> while True:
+   if offset >size:
+     break
+   fout.write(bdata[offset:offset+chunk])
+   offset += chunk
 
-## 数据库 ##
-### 关系型数据库 ###
-### NoSQL数据库 ###
-### 全文数据库 ###
+	
+100
+100
+56
+>>> fout.close()`
+## Sturctured text files and binary files ##
+### text file ###
+### binary file ###
+
+## Databases ##
+### Relational Databases ###
+### NoSQL Data stores ###
+### Full-Text Databases ###
