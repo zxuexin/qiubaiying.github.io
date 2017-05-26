@@ -60,14 +60,16 @@ And it's the tools for XTML5.
  
 2.XML is similary like XTML 5.It's a markup format too,It uses tage to delimit data.
 For instance:
+
 ```
-<?xml version="1.0"?>
-<menu>
-<dinner hours="3-10">
-   <item price="8.00">spaghetti</item>
-</dinner>
-</menu>
+  <?xml version="1.0"?>
+  <menu>
+  <dinner hours="3-10">
+     <item price="8.00">spaghetti</item>
+  </dinner>
+  </menu>
 ```
+
 there are many libraries could used to parse XML.for example: ElementTree
 
 3.HTML(hypertext markup language) is the usually format in web.I read some standard of HTML and CSS in fly.you can search in browers.
