@@ -15,15 +15,15 @@
 such as:
 
 ```fout = open('bfile','wb')
-   bdata = bytes(range(0,256))
-   ```
+   bdata = bytes(range(0,256))```
+   
 the length:
 `len(bdata) 
  256`
 
 built a new file,write the number:
-```
-fout = open('bfile','wb')
+
+```fout = open('bfile','wb')
 size = len(bdata)
 offset = 0
 chunk = 100
@@ -31,8 +31,8 @@ while True:
     if offset >size:
         break
     fout.write(bdata[offset:offset+chunk])
-    offset += chunk
-```
+    offset += chunk```
+
 feed:
 100
 100
@@ -54,32 +54,29 @@ Text File has follow formats:
 
 The usually formats is SCV and HTML.now HTML 5 is supported by most broswers,such as chrome and foxfire.
 And it's the tools for XTML5.
-1.SCV are ofen used as an exchange format for spreadsheets and databases. we used the standard CSV module liked that:
+1. SCV are ofen used as an exchange format for spreadsheets and databases. we used the standard CSV module liked that:
 `import CSV`
  keyword:reader(),writer() and DictReader()
  
-2.XML is similary like XTML 5.It's a markup format too,It uses tage to delimit data.
+2. XML is similary like XTML 5.It's a markup format too,It uses tage to delimit data.
 For instance:
 
-```
-  <?xml version="1.0"?>
-  <menu>
-  <dinner hours="3-10">
-     <item price="8.00">spaghetti</item>
-  </dinner>
-  </menu>
-```
+```1  <?xml version="1.0"?>
+2  <menu>
+3  <dinner hours="3-10">
+4     <item price="8.00">spaghetti</item>
+5  </dinner>
+6  </menu>```
 
 there are many libraries could used to parse XML.for example: ElementTree
 
-3.HTML(hypertext markup language) is the usually format in web.I read some standard of HTML and CSS in fly.you can search in browers.
+3. HTML(hypertext markup language) is the usually format in web.I read some standard of HTML and CSS in fly.you can search in browers.
 
-4.JSON(JavaScript Object Notation). the main JSON module name *json*.This program can encode(dumps/loads) a JSON string to data or reverse.
+4. JSON(JavaScript Object Notation). the main JSON module name *json*.This program can encode(dumps/loads) a JSON string to data or reverse.
 
-5.YAML is similar to JSON,has keys and values, there are third-party library named *yaml* to manipulate it.
+5. YAML is similar to JSON,has keys and values, there are third-party library named *yaml* to manipulate it.
 
 ### binary file ###
-
 ## Databases ##
 ### Relational Databases ###
 ### NoSQL Data stores ###
