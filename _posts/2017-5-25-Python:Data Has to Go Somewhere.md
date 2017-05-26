@@ -13,9 +13,10 @@
 > keyword:write(),open(),read(),readline(), with,seek()
     
 such as:
-
-```fout = open('bfile','wb')
-   bdata = bytes(range(0,256))```
+```
+fout = open('bfile','wb')
+bdata = bytes(range(0,256))
+```
    
 the length:
 `len(bdata) 
@@ -23,7 +24,8 @@ the length:
 
 built a new file,write the number:
 
-```fout = open('bfile','wb')
+```
+fout = open('bfile','wb')
 size = len(bdata)
 offset = 0
 chunk = 100
@@ -31,7 +33,8 @@ while True:
     if offset >size:
         break
     fout.write(bdata[offset:offset+chunk])
-    offset += chunk```
+    offset += chunk
+ ```
 
 feed:
 100
@@ -61,12 +64,14 @@ And it's the tools for XTML5.
 2. XML is similary like XTML 5.It's a markup format too,It uses tage to delimit data.
 For instance:
 
-```1  <?xml version="1.0"?>
+```
+1  <?xml version="1.0"?>
 2  <menu>
 3  <dinner hours="3-10">
 4     <item price="8.00">spaghetti</item>
 5  </dinner>
-6  </menu>```
+6  </menu>
+```
 
 there are many libraries could used to parse XML.for example: ElementTree
 
