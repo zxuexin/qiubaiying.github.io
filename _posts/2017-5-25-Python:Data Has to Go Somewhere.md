@@ -14,14 +14,14 @@
     
 such as:
 
-```
-fout = open('bfile','wb')
-bdata = bytes(range(0,256))
-len(bdata)
-``` 
-answer:
-256
+```fout = open('bfile','wb')
+   bdata = bytes(range(0,256))
+   ```
+the length:
+`len(bdata) 
+ 256`
 
+built a new file,write the number:
 ```
 fout = open('bfile','wb')
 size = len(bdata)
@@ -33,7 +33,7 @@ while True:
     fout.write(bdata[offset:offset+chunk])
     offset += chunk
 ```
-answer:
+feed:
 100
 100
 56
@@ -43,6 +43,8 @@ then close the file:
 
 
 ## Sturctured text files and binary files ##
+
+### text file ###
 Text File has follow formats:
 1. SCV
 2. XML
@@ -52,8 +54,28 @@ Text File has follow formats:
 
 The usually formats is SCV and HTML.now HTML 5 is supported by most broswers,such as chrome and foxfire.
 And it's the tools for XTML5.
+1.SCV are ofen used as an exchange format for spreadsheets and databases. we used the standard CSV module liked that:
+`import CSV`
+ keyword:reader(),writer() and DictReader()
+ 
+2.XML is similary like XTML 5.It's a markup format too,It uses tage to delimit data.
+For instance:
+```
+<?xml version="1.0"?>
+<menu>
+<dinner hours="3-10">
+   <item price="8.00">spaghetti</item>
+</dinner>
+</menu>
+```
+there are many libraries could used to parse XML.for example: ElementTree
 
-### text file ###
+3.HTML(hypertext markup language) is the usually format in web.I read some standard of HTML and CSS in fly.you can search in browers.
+
+4.JSON(JavaScript Object Notation). the main JSON module name *json*.This program can encode(dumps/loads) a JSON string to data or reverse.
+
+5.YAML is similar to JSON,has keys and values, there are third-party library named *yaml* to manipulate it.
+
 ### binary file ###
 
 ## Databases ##
