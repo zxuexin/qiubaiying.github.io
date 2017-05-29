@@ -45,7 +45,7 @@ then close the file:
 ` fout.close()`
 
 
-## Sturctured text files and binary files ##
+## Structured text files and binary files ##
 
 ### text file ###
 Text File has follow formats:
@@ -82,7 +82,36 @@ there are many libraries could used to parse XML.for example: ElementTree
 5. YAML is similar to JSON,has keys and values, there are third-party library named *yaml* to manipulate it.
 
 ### binary file ###
+1. HDF5
+    It's used mianly in sciece,where fast random access to large datasets in a common requirement.
+    Python's interface:h5py(low-level),PyTables(higher-level).
+    
 ## Databases ##
 ### Relational Databases ###
+#### SQL ####
+SQL is a declarative language,It has two main categories:1.DDL(data definition language) 2.DML(data manipulation languange)
+#### DB-API ####
+DB-API is Python's standard API for accessing relational databases.
+keyword:connect(),cursor(),execute() and executemany(),fetchone(),fetchmany(),fetchall().
+#### SQLite ####
+an open source relational database.It's implemented as a standard Python library,and stores databases in normal files.and it's
+not full-featured as MySQL and PostgreSQL.But it's also can manages multiple simultaneous users.
+#### MySQL ####
+There has many book introduced this MySQL,we can buy one to study.
+#### PostgreSQL ####
+It's a open source relational database too.the Python's most popular driver is psycopg2.If you want build a blog.you can use
+flask+PostgreSQL.
+
+#### SQLAIchemy ####
+It's a popular cross-database Python library.
 ### NoSQL Data stores ###
+These were written to handle very large data sets, allow more flexible data definitions, or support custom data operations.
+#### The dbm Family ####
+a format
+#### Memcached ####
+a cache server
+#### Redis ####
+a data sturcture server
+
 ### Full-Text Databases ###
+ Full-Text Databases index almost everything.
