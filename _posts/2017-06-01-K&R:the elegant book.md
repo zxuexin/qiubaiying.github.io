@@ -6,11 +6,13 @@ some notes.
 ##### Charpeter 4-Functions and Program Structure ####
 1. Basics of Functions
 
-    Each function definiton has the form
-```return-type function-name(argument declarations)
-     {
+Each function definiton has the form
+```
+return-type function-name(argument declarations)
+    {
          declarations and statements
-     }```
-     
+     }
+```     
   The return-type and conversation argument can omitted.If need return a value from called function to its caller.Shall use bellow expression:
+  
     `return expression;`
