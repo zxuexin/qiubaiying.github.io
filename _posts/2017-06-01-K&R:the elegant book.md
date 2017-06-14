@@ -25,4 +25,15 @@ return-type function-name(argument declarations)
   External variables and functions are globally accessible,they existence pernament,and convenient to change values
   
 * 4.4 Scope Rules
+  External variables should be declaration in the in definition file like `int x=1;`
+  and only declarate in the other file like `int x;`,needn't write the value,and the declaration must lie ahead of file that suffice the whole file.
+  
+* 4.5 Header Files
+To seprate the function to splited file,and tradeoff which one put which.
+the examine in the book is calculate.seprate the `main.c` and head file `calc.h` to share the declaration and definition,and other file for function and storage.
+seperate the file is necessary for much larger program to organization and managerment.
+
+* 4.6 Static Variable
+
+  
 
