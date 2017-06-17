@@ -35,5 +35,27 @@ seperate the file is necessary for much larger program to organization and manag
 
 * 4.6 Static Variable
 
-  
+##### Charpeter 5-Pointers and arrays #####
 
+* 5.1 Pointers and Addresses
+* 5.2 Pointers and Function Arguments
+* 5.3 Pointers and Arrays
+  There is a strong relationship between pointers and arrays.Instance:
+```
+    int *pa;
+    int a[];
+    pa = &a[0]  /* It's equal to pa = a = &a[0] */
+    *(pa+1)  /* refer to the contents of a[1] */
+```
+* 5.4 Address Arithmetic
+pointer is similar to int arithmetic,have +,-,and relation arithmetic ==,!=,<,>=,etc.,but not
+multiply and divid and so on.
+
+* 5.5 Character Pointers and Functions
+be carousely of blew definitons:
+```
+    char amessage[] = "now is the time"  /* an array */
+    char *pmessage = "now is the time"   /* a pointer */
+```    
+array can change the character,but pointer can't.
+and character pointer is easy to compare and exchange ,and copy etc. .
